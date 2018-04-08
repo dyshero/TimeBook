@@ -10,3 +10,4 @@
    定期更新壁纸，可以一键保存。
    
 ### 录制
+![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/Resource/video.mp4)
