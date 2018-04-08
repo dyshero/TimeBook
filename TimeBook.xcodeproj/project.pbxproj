@@ -59,6 +59,11 @@
 		7B87EE281FD7F0DE00C0AA90 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87EE221FD7F0DE00C0AA90 /* BaseNavigationController.m */; };
 		7B87EE291FD7F0DE00C0AA90 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87EE261FD7F0DE00C0AA90 /* BaseViewController.m */; };
 		7B981F2D1FD9069E00363299 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B981F2B1FD9069E00363299 /* NSString+Util.m */; };
+		FBE42608207A0CC600AF5B92 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE42603207A0CC600AF5B92 /* 1.jpg */; };
+		FBE42609207A0CC600AF5B92 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE42604207A0CC600AF5B92 /* 4.jpg */; };
+		FBE4260A207A0CC600AF5B92 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE42605207A0CC600AF5B92 /* 5.jpg */; };
+		FBE4260B207A0CC600AF5B92 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE42606207A0CC600AF5B92 /* 2.jpg */; };
+		FBE4260C207A0CC600AF5B92 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBE42607207A0CC600AF5B92 /* 3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +164,11 @@
 		8573A51AF969AC52C637B1BF /* libPods-TimeBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimeBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1F43216DAB7A52ECE269C0 /* Pods-TimeBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeBook/Pods-TimeBook.debug.xcconfig"; sourceTree = "<group>"; };
 		ED4683E5D6D961CECBB925F0 /* Pods-TimeBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeBook/Pods-TimeBook.release.xcconfig"; sourceTree = "<group>"; };
+		FBE42603207A0CC600AF5B92 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		FBE42604207A0CC600AF5B92 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		FBE42605207A0CC600AF5B92 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		FBE42606207A0CC600AF5B92 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		FBE42607207A0CC600AF5B92 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +284,7 @@
 		7B6668B01FD7ECBB009FD8AD /* TimeBook */ = {
 			isa = PBXGroup;
 			children = (
+				FBE42600207A0CB000AF5B92 /* Resource */,
 				7B87EE1C1FD7F09300C0AA90 /* Recommend */,
 				7B87EE1D1FD7F09300C0AA90 /* SampleReels */,
 				7B87EE1E1FD7F09300C0AA90 /* Wallpaper */,
@@ -412,6 +423,18 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		FBE42600207A0CB000AF5B92 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FBE42603207A0CC600AF5B92 /* 1.jpg */,
+				FBE42606207A0CC600AF5B92 /* 2.jpg */,
+				FBE42607207A0CC600AF5B92 /* 3.jpg */,
+				FBE42604207A0CC600AF5B92 /* 4.jpg */,
+				FBE42605207A0CC600AF5B92 /* 5.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -481,11 +504,16 @@
 				7B81771C1FDE2A900056636F /* SampleReelsCell.xib in Resources */,
 				7B3ACD6F1FDE86BB0099FB3D /* ThemeColorView.xib in Resources */,
 				7B8177211FDE5FB80056636F /* LaunchView.xib in Resources */,
+				FBE4260A207A0CC600AF5B92 /* 5.jpg in Resources */,
+				FBE42609207A0CC600AF5B92 /* 4.jpg in Resources */,
 				7B0058131FD8E30E00DAFF1E /* RecommendController.xib in Resources */,
+				FBE42608207A0CC600AF5B92 /* 1.jpg in Resources */,
+				FBE4260B207A0CC600AF5B92 /* 2.jpg in Resources */,
 				7B4578221FDA44210076FDCF /* RecommendArticleDetailHeader.xib in Resources */,
 				7B6668B91FD7ECBC009FD8AD /* Main.storyboard in Resources */,
 				7B0058181FD8E32300DAFF1E /* SampleReelsController.xib in Resources */,
 				7B1ADB791FD91F9F0061FC69 /* RecommendDateDetailCtr.xib in Resources */,
+				FBE4260C207A0CC600AF5B92 /* 3.jpg in Resources */,
 				7B524F101FDBB4F800B2BA79 /* WallpaperCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
