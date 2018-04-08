@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="SampleReelsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="342"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="341.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0n5-bn-pCC" customClass="NewPagedFlowView">
+                        <rect key="frame" x="0.0" y="82.5" width="375" height="251"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R8p-iD-NZk">
+                        <rect key="frame" x="12" y="32" width="7" height="38.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lc6-kE-TvE">
+                        <rect key="frame" x="23" y="51.5" width="4" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCv-ha-veW">
+                        <rect key="frame" x="327" y="46.5" width="48" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="5fy-H2-hxZ"/>
+                            <constraint firstAttribute="height" constant="24" id="a97-rt-BEn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0n5-bn-pCC" secondAttribute="trailing" id="52B-e5-X6K"/>
+                    <constraint firstAttribute="bottom" secondItem="0n5-bn-pCC" secondAttribute="bottom" constant="8" id="5UC-vH-Qoc"/>
+                    <constraint firstItem="RCv-ha-veW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lc6-kE-TvE" secondAttribute="trailing" constant="4" id="B6D-q0-bWi"/>
+                    <constraint firstAttribute="trailing" secondItem="RCv-ha-veW" secondAttribute="trailing" id="DFr-s6-B0L"/>
+                    <constraint firstItem="R8p-iD-NZk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="MyI-KT-lZT"/>
+                    <constraint firstItem="R8p-iD-NZk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="R8B-nf-Zta"/>
+                    <constraint firstItem="lc6-kE-TvE" firstAttribute="leading" secondItem="R8p-iD-NZk" secondAttribute="trailing" constant="4" id="SBi-UW-PRt"/>
+                    <constraint firstItem="lc6-kE-TvE" firstAttribute="bottom" secondItem="R8p-iD-NZk" secondAttribute="bottom" constant="-2" id="ZWK-7l-UL0"/>
+                    <constraint firstItem="RCv-ha-veW" firstAttribute="bottom" secondItem="R8p-iD-NZk" secondAttribute="bottom" id="hxt-vL-H4a"/>
+                    <constraint firstItem="0n5-bn-pCC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="t6U-UG-gOg"/>
+                    <constraint firstItem="0n5-bn-pCC" firstAttribute="top" secondItem="R8p-iD-NZk" secondAttribute="bottom" constant="12" id="zNA-EG-eYN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="numberLabel" destination="RCv-ha-veW" id="zVT-F5-ROm"/>
+                <outlet property="pageFlowView" destination="0n5-bn-pCC" id="NPG-nl-RZL"/>
+                <outlet property="subTitleLabel" destination="lc6-kE-TvE" id="9n7-XV-IUS"/>
+                <outlet property="titleLabel" destination="R8p-iD-NZk" id="lDC-Vo-feX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

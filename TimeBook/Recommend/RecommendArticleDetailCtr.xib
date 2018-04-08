@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendArticleDetailCtr">
+            <connections>
+                <outlet property="backBtn" destination="ZUl-ui-3RD" id="NW0-iv-1qZ"/>
+                <outlet property="bottomLeftView" destination="G7l-Wn-sxo" id="qAb-rg-6jT"/>
+                <outlet property="bottomScrollView" destination="vo0-l1-cql" id="4NH-yY-I0E"/>
+                <outlet property="bottomView" destination="sh5-qO-4qR" id="1QT-Cj-70a"/>
+                <outlet property="tableView" destination="uFe-qu-9rg" id="3VJ-bc-vXB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-qu-9rg" customClass="BaseTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sh5-qO-4qR">
+                    <rect key="frame" x="0.0" y="571" width="375" height="96"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo0-l1-cql">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        </scrollView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7l-Wn-sxo">
+                            <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="96" id="5jb-Ff-Fug"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="2VM-Dl-mVy"/>
+                        <constraint firstAttribute="bottom" secondItem="vo0-l1-cql" secondAttribute="bottom" id="5yD-LQ-3T7"/>
+                        <constraint firstItem="G7l-Wn-sxo" firstAttribute="leading" secondItem="sh5-qO-4qR" secondAttribute="leading" id="AWK-MD-whW"/>
+                        <constraint firstItem="vo0-l1-cql" firstAttribute="top" secondItem="sh5-qO-4qR" secondAttribute="top" id="GI0-iS-U6L"/>
+                        <constraint firstAttribute="trailing" secondItem="vo0-l1-cql" secondAttribute="trailing" id="GhR-bJ-xjt"/>
+                        <constraint firstAttribute="bottom" secondItem="G7l-Wn-sxo" secondAttribute="bottom" id="MVZ-Z4-z7y"/>
+                        <constraint firstItem="vo0-l1-cql" firstAttribute="leading" secondItem="sh5-qO-4qR" secondAttribute="leading" id="mq7-Gn-t44"/>
+                        <constraint firstItem="G7l-Wn-sxo" firstAttribute="top" secondItem="sh5-qO-4qR" secondAttribute="top" id="r69-5v-bdW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUl-ui-3RD">
+                    <rect key="frame" x="12" y="599" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8hv-KR-6MR"/>
+                        <constraint firstAttribute="width" secondItem="ZUl-ui-3RD" secondAttribute="height" id="hRS-op-yTf"/>
+                    </constraints>
+                    <state key="normal" image="return"/>
+                    <connections>
+                        <action selector="clickBack:" destination="-1" eventType="touchUpInside" id="tuQ-1D-hIz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uFe-qu-9rg" secondAttribute="bottom" id="0eQ-9P-1Q6"/>
+                <constraint firstItem="sh5-qO-4qR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5fG-D6-qoI"/>
+                <constraint firstItem="uFe-qu-9rg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cov-c2-Fc7"/>
+                <constraint firstAttribute="trailing" secondItem="uFe-qu-9rg" secondAttribute="trailing" id="GcG-Nr-S5V"/>
+                <constraint firstItem="ZUl-ui-3RD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="Rnb-ir-xww"/>
+                <constraint firstAttribute="bottom" secondItem="ZUl-ui-3RD" secondAttribute="bottom" constant="24" id="fXA-u4-2bs"/>
+                <constraint firstAttribute="trailing" secondItem="sh5-qO-4qR" secondAttribute="trailing" id="kYy-IY-j0z"/>
+                <constraint firstAttribute="bottom" secondItem="sh5-qO-4qR" secondAttribute="bottom" id="owG-wH-Jq8"/>
+                <constraint firstItem="uFe-qu-9rg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uER-Qk-G0Y"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="return" width="15" height="23"/>
+    </resources>
+</document>

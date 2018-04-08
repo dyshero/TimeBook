@@ -1,0 +1,6 @@
+framework module AdHubSDK {
+  umbrella header "AdHubSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,7 @@
+
+target 'TimeBook' do
+pod 'AFNetworking'
+pod 'YYKit'
+pod 'MJRefresh'
+pod 'AdHubSDKPod'
+end
