@@ -9,5 +9,5 @@
 3. **壁纸**
    定期更新壁纸，可以一键保存。
    
-### 录制
-![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/Resource/video.mp4)
+### 截图
+![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/Resource/1.jpg)![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/Resource/2.jpg)![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/Resource/3.jpg)![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/Resource/4.jpg)![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/Resource/5.jpg)
