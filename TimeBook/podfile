@@ -1,0 +1,10 @@
+
+target 'TimeBook' do
+pod 'AFNetworking'
+pod 'YYKit'
+pod 'MJRefresh'
+pod 'AdHubSDKPod'
+pod 'Masonry'
+pod 'FDFullscreenPopGesture'
+pod 'SVProgressHUD'
+end

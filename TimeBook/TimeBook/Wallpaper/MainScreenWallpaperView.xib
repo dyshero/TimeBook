@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainScreenWallpaperView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ge3-a0-Vxc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundHomeScreenTop-OS7" translatesAutoresizingMaskIntoConstraints="NO" id="Q4V-j0-nBX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="436"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Q4V-j0-nBX" secondAttribute="height" multiplier="640:744" id="Vhg-PE-dPq"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sq4-5w-6QJ">
+                    <rect key="frame" x="10" y="561" width="355" height="111"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundHomeScreenBottom-OS7" translatesAutoresizingMaskIntoConstraints="NO" id="x6r-a9-85h">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="111"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="x6r-a9-85h" firstAttribute="leading" secondItem="Sq4-5w-6QJ" secondAttribute="leading" id="10Q-lK-up2"/>
+                        <constraint firstAttribute="trailing" secondItem="x6r-a9-85h" secondAttribute="trailing" id="E8b-wR-x3V"/>
+                        <constraint firstItem="x6r-a9-85h" firstAttribute="top" secondItem="Sq4-5w-6QJ" secondAttribute="top" id="JqB-xa-GMB"/>
+                        <constraint firstAttribute="bottom" secondItem="x6r-a9-85h" secondAttribute="bottom" id="i2f-Kd-4pW"/>
+                        <constraint firstAttribute="width" secondItem="Sq4-5w-6QJ" secondAttribute="height" multiplier="64:20" id="leG-KX-2rG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sq4-5w-6QJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="1yT-UP-iQa"/>
+                <constraint firstAttribute="trailing" secondItem="Sq4-5w-6QJ" secondAttribute="trailing" constant="10" id="7og-es-SMt"/>
+                <constraint firstItem="ge3-a0-Vxc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8w3-Ru-dxH"/>
+                <constraint firstItem="ge3-a0-Vxc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9ZQ-fw-wed"/>
+                <constraint firstItem="Q4V-j0-nBX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XCB-m8-kxv"/>
+                <constraint firstItem="Sq4-5w-6QJ" firstAttribute="bottom" secondItem="9fC-mq-SIa" secondAttribute="bottom" constant="5" id="a2D-wj-shR"/>
+                <constraint firstAttribute="trailing" secondItem="Q4V-j0-nBX" secondAttribute="trailing" id="fRA-i1-bEO"/>
+                <constraint firstAttribute="bottom" secondItem="ge3-a0-Vxc" secondAttribute="bottom" id="fhN-oc-cNW"/>
+                <constraint firstAttribute="trailing" secondItem="ge3-a0-Vxc" secondAttribute="trailing" id="nVC-MD-Y00"/>
+                <constraint firstItem="Q4V-j0-nBX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vdM-XM-737"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9fC-mq-SIa"/>
+            <connections>
+                <outlet property="bgImageView" destination="ge3-a0-Vxc" id="bD3-HX-eZa"/>
+                <outlet property="bottomView" destination="Sq4-5w-6QJ" id="5cn-e7-iFe"/>
+                <outlet property="topImageViewConstraint" destination="vdM-XM-737" id="2dl-iO-hj2"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackgroundHomeScreenBottom-OS7" width="320" height="100"/>
+        <image name="BackgroundHomeScreenTop-OS7" width="320" height="372"/>
+    </resources>
+</document>
