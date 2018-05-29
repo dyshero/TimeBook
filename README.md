@@ -20,3 +20,6 @@
 ![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/TimeBook/ScreenShot/2.png)
 ![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/TimeBook/ScreenShot/3.png)
 ![](https://github.com/dyshero/TimeBook/blob/master/TimeBook/TimeBook/ScreenShot/4.png)
+
+### 后记
+终于搞定了服务端远程推送。作为前端的我，没有一丝服务端基础，虽然大学时期学过Java、PHP、C#，但是之前只会做一些网站。于是，自己怒学Python语言，因为计算机语言之间的共性太多了，所以两天用Python搞定了服务端的推送配置，虽然只是些皮毛🤣，原来如此简单，自己还租用了阿里云的服务器，一年一两百块钱吧，虽然这个APP并不会给我带来任何的收益，但是自己心里美滋滋的，这就是所谓的职业信仰（思考状）。这款APP我会一直完善。
