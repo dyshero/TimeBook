@@ -7,4 +7,5 @@ pod 'AdHubSDKPod'
 pod 'Masonry'
 pod 'FDFullscreenPopGesture'
 pod 'SVProgressHUD'
+pod 'SDWebImage'
 end

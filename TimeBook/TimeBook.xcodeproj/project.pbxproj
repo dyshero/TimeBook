@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1CE2B2739537B5C8B4DBBB0E /* libPods-TimeBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573A51AF969AC52C637B1BF /* libPods-TimeBook.a */; };
-		7B0057DC1FD8D4D000DAFF1E /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0057DA1FD8D4D000DAFF1E /* NetRequest.m */; };
 		7B0057E81FD8D56900DAFF1E /* ScrollViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0057E11FD8D56900DAFF1E /* ScrollViewHeader.m */; };
 		7B0057E91FD8D56900DAFF1E /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0057E41FD8D56900DAFF1E /* BaseTableViewCell.m */; };
 		7B0057EA1FD8D56900DAFF1E /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0057E61FD8D56900DAFF1E /* BaseTableView.m */; };
@@ -62,6 +61,11 @@
 		FB43BE9C20A59B5700E3956F /* WallpaperHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB43BE9A20A59B5700E3956F /* WallpaperHeaderView.m */; };
 		FB43BE9D20A59B5700E3956F /* WallpaperHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB43BE9B20A59B5700E3956F /* WallpaperHeaderView.xib */; };
 		FB43BEA020A5A27300E3956F /* WallpaperListController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB43BE9F20A5A27300E3956F /* WallpaperListController.m */; };
+		FB676D6E20ABCFAD00A1554C /* DDCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB676D6D20ABCFAD00A1554C /* DDCircleProgressView.m */; };
+		FB6E178E20BBB6CB00AC77C2 /* jcore-ios-1.1.9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6E178920BBB6CB00AC77C2 /* jcore-ios-1.1.9.a */; };
+		FB6E178F20BBB6CB00AC77C2 /* jpush-ios-3.0.9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6E178C20BBB6CB00AC77C2 /* jpush-ios-3.0.9.a */; };
+		FB6E179120BBBA3100AC77C2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6E179020BBBA3100AC77C2 /* libresolv.tbd */; };
+		FB6E179820BBBFE300AC77C2 /* janalytics-ios-1.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6E179520BBBFE200AC77C2 /* janalytics-ios-1.2.1.a */; };
 		FBA236EC20A93A09001C9C07 /* WallpaperDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA236EB20A93A09001C9C07 /* WallpaperDetailController.m */; };
 		FBA236EF20A93B68001C9C07 /* WallpaperBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA236EE20A93B68001C9C07 /* WallpaperBottomView.m */; };
 		FBA236F120A93B6F001C9C07 /* WallpaperBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA236F020A93B6F001C9C07 /* WallpaperBottomView.xib */; };
@@ -75,8 +79,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B0057DA1FD8D4D000DAFF1E /* NetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
-		7B0057DB1FD8D4D000DAFF1E /* NetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		7B0057E01FD8D56900DAFF1E /* ScrollViewFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewFooter.h; sourceTree = "<group>"; };
 		7B0057E11FD8D56900DAFF1E /* ScrollViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewHeader.m; sourceTree = "<group>"; };
 		7B0057E21FD8D56900DAFF1E /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
@@ -159,7 +161,6 @@
 		7B87EE261FD7F0DE00C0AA90 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		7B87EE2B1FD7F17E00C0AA90 /* AppHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppHeader.pch; sourceTree = "<group>"; };
 		7B87EE2C1FD7F26D00C0AA90 /* APPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPConfig.h; sourceTree = "<group>"; };
-		7B87EE2E1FD7F26D00C0AA90 /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
 		7B87EE301FD7F26D00C0AA90 /* AppFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppFramework.h; sourceTree = "<group>"; };
 		7B981F2B1FD9069E00363299 /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
 		7B981F2C1FD9069E00363299 /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
@@ -178,6 +179,17 @@
 		FB43BE9B20A59B5700E3956F /* WallpaperHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WallpaperHeaderView.xib; sourceTree = "<group>"; };
 		FB43BE9E20A5A27300E3956F /* WallpaperListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WallpaperListController.h; sourceTree = "<group>"; };
 		FB43BE9F20A5A27300E3956F /* WallpaperListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WallpaperListController.m; sourceTree = "<group>"; };
+		FB676D6C20ABCFAD00A1554C /* DDCircleProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCircleProgressView.h; sourceTree = "<group>"; };
+		FB676D6D20ABCFAD00A1554C /* DDCircleProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCircleProgressView.m; sourceTree = "<group>"; };
+		FB6E178620BBB41D00AC77C2 /* TimeBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeBook.entitlements; sourceTree = "<group>"; };
+		FB6E178920BBB6CB00AC77C2 /* jcore-ios-1.1.9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-1.1.9.a"; sourceTree = "<group>"; };
+		FB6E178A20BBB6CB00AC77C2 /* JPushNotificationExtensionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPushNotificationExtensionService.h; sourceTree = "<group>"; };
+		FB6E178B20BBB6CB00AC77C2 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		FB6E178C20BBB6CB00AC77C2 /* jpush-ios-3.0.9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.0.9.a"; sourceTree = "<group>"; };
+		FB6E179020BBBA3100AC77C2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		FB6E179420BBBFE200AC77C2 /* JANALYTICSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JANALYTICSService.h; sourceTree = "<group>"; };
+		FB6E179520BBBFE200AC77C2 /* janalytics-ios-1.2.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "janalytics-ios-1.2.1.a"; sourceTree = "<group>"; };
+		FB6E179620BBBFE200AC77C2 /* JANALYTICSEventObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JANALYTICSEventObject.h; sourceTree = "<group>"; };
 		FBA236EA20A93A09001C9C07 /* WallpaperDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WallpaperDetailController.h; sourceTree = "<group>"; };
 		FBA236EB20A93A09001C9C07 /* WallpaperDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WallpaperDetailController.m; sourceTree = "<group>"; };
 		FBA236ED20A93B68001C9C07 /* WallpaperBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WallpaperBottomView.h; sourceTree = "<group>"; };
@@ -201,7 +213,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6E179820BBBFE300AC77C2 /* janalytics-ios-1.2.1.a in Frameworks */,
+				FB6E178E20BBB6CB00AC77C2 /* jcore-ios-1.1.9.a in Frameworks */,
+				FB6E179120BBBA3100AC77C2 /* libresolv.tbd in Frameworks */,
 				1CE2B2739537B5C8B4DBBB0E /* libPods-TimeBook.a in Frameworks */,
+				FB6E178F20BBB6CB00AC77C2 /* jpush-ios-3.0.9.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +227,7 @@
 		61E332E524C6061C12D10874 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB6E179020BBBA3100AC77C2 /* libresolv.tbd */,
 				8573A51AF969AC52C637B1BF /* libPods-TimeBook.a */,
 			);
 			name = Frameworks;
@@ -256,6 +273,8 @@
 		7B00581E1FD8E94500DAFF1E /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				FB6E179220BBBFE200AC77C2 /* janalytics */,
+				FB6E178720BBB6CB00AC77C2 /* Jpush */,
 				7B00581F1FD8E94D00DAFF1E /* NewPagedFlowView */,
 			);
 			path = Vendor;
@@ -309,14 +328,13 @@
 		7B6668B01FD7ECBB009FD8AD /* TimeBook */ = {
 			isa = PBXGroup;
 			children = (
+				FB6E178620BBB41D00AC77C2 /* TimeBook.entitlements */,
 				7B87EE1C1FD7F09300C0AA90 /* Recommend */,
 				7B87EE1D1FD7F09300C0AA90 /* SampleReels */,
 				7B87EE1E1FD7F09300C0AA90 /* Wallpaper */,
 				7B87EE201FD7F09300C0AA90 /* Home */,
 				7B87EE1F1FD7F09300C0AA90 /* Other */,
-				7B0057EC1FD8D58600DAFF1E /* Categories */,
 				7B87EE191FD7F09200C0AA90 /* Base */,
-				7B00581E1FD8E94500DAFF1E /* Vendor */,
 				7B6668B71FD7ECBC009FD8AD /* Main.storyboard */,
 				7B6668BA1FD7ECBC009FD8AD /* Assets.xcassets */,
 				7B6668BC1FD7ECBC009FD8AD /* LaunchScreen.storyboard */,
@@ -364,23 +382,9 @@
 		7B87EE1C1FD7F09300C0AA90 /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
-				7B00580F1FD8E30E00DAFF1E /* RecommendController.h */,
-				7B0058101FD8E30E00DAFF1E /* RecommendController.m */,
-				7B0058111FD8E30E00DAFF1E /* RecommendController.xib */,
-				7B1ADB751FD91F9F0061FC69 /* RecommendDateDetailCtr.h */,
-				7B1ADB761FD91F9F0061FC69 /* RecommendDateDetailCtr.m */,
-				7B1ADB771FD91F9F0061FC69 /* RecommendDateDetailCtr.xib */,
-				7B1ADB7A1FD91FBF0061FC69 /* RecommendArticleDetailCtr.h */,
-				7B1ADB7B1FD91FBF0061FC69 /* RecommendArticleDetailCtr.m */,
-				7B1ADB7C1FD91FBF0061FC69 /* RecommendArticleDetailCtr.xib */,
-				7B45781E1FDA440E0076FDCF /* RecommendArticleDetailHeader.h */,
-				7B45781F1FDA440E0076FDCF /* RecommendArticleDetailHeader.m */,
-				7B4578211FDA44210076FDCF /* RecommendArticleDetailHeader.xib */,
-				7B4578191FDA415E0076FDCF /* RecommendArticleDetailCell.h */,
-				7B45781A1FDA415E0076FDCF /* RecommendArticleDetailCell.m */,
-				7B45781B1FDA415E0076FDCF /* RecommendArticleDetailCell.xib */,
-				7B0058281FD8EF2B00DAFF1E /* RecommendModel.h */,
-				7B0058291FD8EF2B00DAFF1E /* RecommendModel.m */,
+				FB589B6A20B7BD3A00EFDD45 /* Controller */,
+				FB589B6C20B7BD3B00EFDD45 /* Model */,
+				FB589B6B20B7BD3A00EFDD45 /* View */,
 			);
 			path = Recommend;
 			sourceTree = "<group>";
@@ -401,36 +405,11 @@
 		7B87EE1E1FD7F09300C0AA90 /* Wallpaper */ = {
 			isa = PBXGroup;
 			children = (
-				7B524F111FDBB6A700B2BA79 /* WallpaperModel.h */,
-				7B524F121FDBB6A700B2BA79 /* WallpaperModel.m */,
-				FB43BE8920A58C4200E3956F /* WallPagerCategoryController.h */,
-				FB43BE8A20A58C4200E3956F /* WallPagerCategoryController.m */,
-				FB43BE9120A58EF000E3956F /* WallPaperCategoryModel.h */,
-				FB43BE9220A58EF000E3956F /* WallPaperCategoryModel.m */,
-				FB43BE9420A5970700E3956F /* WallpaperCell.h */,
-				FB43BE9520A5970700E3956F /* WallpaperCell.m */,
-				FB43BE9620A5970700E3956F /* WallpaperCell.xib */,
-				FB43BE9920A59B5700E3956F /* WallpaperHeaderView.h */,
-				FB43BE9A20A59B5700E3956F /* WallpaperHeaderView.m */,
-				FB43BE9B20A59B5700E3956F /* WallpaperHeaderView.xib */,
-				FB43BE9E20A5A27300E3956F /* WallpaperListController.h */,
-				FB43BE9F20A5A27300E3956F /* WallpaperListController.m */,
-				FBA236EA20A93A09001C9C07 /* WallpaperDetailController.h */,
-				FBA236EB20A93A09001C9C07 /* WallpaperDetailController.m */,
-				FBA236ED20A93B68001C9C07 /* WallpaperBottomView.h */,
-				FBA236EE20A93B68001C9C07 /* WallpaperBottomView.m */,
-				FBA236F020A93B6F001C9C07 /* WallpaperBottomView.xib */,
+				FB589B6F20B7BD9A00EFDD45 /* Controller */,
+				FB589B6D20B7BD9900EFDD45 /* Model */,
+				FB589B6E20B7BD9A00EFDD45 /* View */,
 				FBA2371A20A96B39001C9C07 /* MyAnnotation.h */,
 				FBA2371B20A96B39001C9C07 /* MyAnnotation.m */,
-				FBA2372220A9907D001C9C07 /* LockWallpaperView.h */,
-				FBA2372320A9907D001C9C07 /* LockWallpaperView.m */,
-				FBA2372520A9908A001C9C07 /* LockWallpaperView.xib */,
-				FBA2372720A998C6001C9C07 /* MainScreenWallpaperView.h */,
-				FBA2372820A998C6001C9C07 /* MainScreenWallpaperView.m */,
-				FBA2372A20A998CD001C9C07 /* MainScreenWallpaperView.xib */,
-				FBA2372C20A9A4AF001C9C07 /* WallpaperDetailSetSheetView.h */,
-				FBA2372D20A9A4AF001C9C07 /* WallpaperDetailSetSheetView.m */,
-				FBA2372F20A9A4B8001C9C07 /* WallpaperDetailSetSheetView.xib */,
 			);
 			path = Wallpaper;
 			sourceTree = "<group>";
@@ -438,11 +417,11 @@
 		7B87EE1F1FD7F09300C0AA90 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				7B00581E1FD8E94500DAFF1E /* Vendor */,
+				7B0057EC1FD8D58600DAFF1E /* Categories */,
+				FB676D6B20ABCF9400A1554C /* Custome */,
 				7B2CB0A61FECC4C5002682E6 /* AFNet.h */,
 				7B2CB0A51FECC4C5002682E6 /* AFNet.m */,
-				7B0057DB1FD8D4D000DAFF1E /* NetRequest.h */,
-				7B0057DA1FD8D4D000DAFF1E /* NetRequest.m */,
-				7B87EE2E1FD7F26D00C0AA90 /* APIConfig.h */,
 				7B87EE2C1FD7F26D00C0AA90 /* APPConfig.h */,
 				7B87EE301FD7F26D00C0AA90 /* AppFramework.h */,
 				7B6668B11FD7ECBC009FD8AD /* AppDelegate.h */,
@@ -467,6 +446,123 @@
 				7B3ACD6E1FDE86BB0099FB3D /* ThemeColorView.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		FB589B6A20B7BD3A00EFDD45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B00580F1FD8E30E00DAFF1E /* RecommendController.h */,
+				7B0058101FD8E30E00DAFF1E /* RecommendController.m */,
+				7B0058111FD8E30E00DAFF1E /* RecommendController.xib */,
+				7B1ADB751FD91F9F0061FC69 /* RecommendDateDetailCtr.h */,
+				7B1ADB761FD91F9F0061FC69 /* RecommendDateDetailCtr.m */,
+				7B1ADB771FD91F9F0061FC69 /* RecommendDateDetailCtr.xib */,
+				7B1ADB7A1FD91FBF0061FC69 /* RecommendArticleDetailCtr.h */,
+				7B1ADB7B1FD91FBF0061FC69 /* RecommendArticleDetailCtr.m */,
+				7B1ADB7C1FD91FBF0061FC69 /* RecommendArticleDetailCtr.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB589B6B20B7BD3A00EFDD45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B4578191FDA415E0076FDCF /* RecommendArticleDetailCell.h */,
+				7B45781A1FDA415E0076FDCF /* RecommendArticleDetailCell.m */,
+				7B45781B1FDA415E0076FDCF /* RecommendArticleDetailCell.xib */,
+				7B45781E1FDA440E0076FDCF /* RecommendArticleDetailHeader.h */,
+				7B45781F1FDA440E0076FDCF /* RecommendArticleDetailHeader.m */,
+				7B4578211FDA44210076FDCF /* RecommendArticleDetailHeader.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB589B6C20B7BD3B00EFDD45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B0058281FD8EF2B00DAFF1E /* RecommendModel.h */,
+				7B0058291FD8EF2B00DAFF1E /* RecommendModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB589B6D20B7BD9900EFDD45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB43BE9120A58EF000E3956F /* WallPaperCategoryModel.h */,
+				FB43BE9220A58EF000E3956F /* WallPaperCategoryModel.m */,
+				7B524F111FDBB6A700B2BA79 /* WallpaperModel.h */,
+				7B524F121FDBB6A700B2BA79 /* WallpaperModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB589B6E20B7BD9A00EFDD45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBA2372720A998C6001C9C07 /* MainScreenWallpaperView.h */,
+				FBA2372820A998C6001C9C07 /* MainScreenWallpaperView.m */,
+				FBA2372A20A998CD001C9C07 /* MainScreenWallpaperView.xib */,
+				FBA2372C20A9A4AF001C9C07 /* WallpaperDetailSetSheetView.h */,
+				FBA2372D20A9A4AF001C9C07 /* WallpaperDetailSetSheetView.m */,
+				FBA2372F20A9A4B8001C9C07 /* WallpaperDetailSetSheetView.xib */,
+				FBA2372220A9907D001C9C07 /* LockWallpaperView.h */,
+				FBA2372320A9907D001C9C07 /* LockWallpaperView.m */,
+				FBA2372520A9908A001C9C07 /* LockWallpaperView.xib */,
+				FBA236ED20A93B68001C9C07 /* WallpaperBottomView.h */,
+				FBA236EE20A93B68001C9C07 /* WallpaperBottomView.m */,
+				FBA236F020A93B6F001C9C07 /* WallpaperBottomView.xib */,
+				FB43BE9420A5970700E3956F /* WallpaperCell.h */,
+				FB43BE9520A5970700E3956F /* WallpaperCell.m */,
+				FB43BE9620A5970700E3956F /* WallpaperCell.xib */,
+				FB43BE9920A59B5700E3956F /* WallpaperHeaderView.h */,
+				FB43BE9A20A59B5700E3956F /* WallpaperHeaderView.m */,
+				FB43BE9B20A59B5700E3956F /* WallpaperHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB589B6F20B7BD9A00EFDD45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB43BE9E20A5A27300E3956F /* WallpaperListController.h */,
+				FB43BE9F20A5A27300E3956F /* WallpaperListController.m */,
+				FBA236EA20A93A09001C9C07 /* WallpaperDetailController.h */,
+				FBA236EB20A93A09001C9C07 /* WallpaperDetailController.m */,
+				FB43BE8920A58C4200E3956F /* WallPagerCategoryController.h */,
+				FB43BE8A20A58C4200E3956F /* WallPagerCategoryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB676D6B20ABCF9400A1554C /* Custome */ = {
+			isa = PBXGroup;
+			children = (
+				FB676D6C20ABCFAD00A1554C /* DDCircleProgressView.h */,
+				FB676D6D20ABCFAD00A1554C /* DDCircleProgressView.m */,
+			);
+			path = Custome;
+			sourceTree = "<group>";
+		};
+		FB6E178720BBB6CB00AC77C2 /* Jpush */ = {
+			isa = PBXGroup;
+			children = (
+				FB6E178920BBB6CB00AC77C2 /* jcore-ios-1.1.9.a */,
+				FB6E178A20BBB6CB00AC77C2 /* JPushNotificationExtensionService.h */,
+				FB6E178B20BBB6CB00AC77C2 /* JPUSHService.h */,
+				FB6E178C20BBB6CB00AC77C2 /* jpush-ios-3.0.9.a */,
+			);
+			path = Jpush;
+			sourceTree = "<group>";
+		};
+		FB6E179220BBBFE200AC77C2 /* janalytics */ = {
+			isa = PBXGroup;
+			children = (
+				FB6E179420BBBFE200AC77C2 /* JANALYTICSService.h */,
+				FB6E179520BBBFE200AC77C2 /* janalytics-ios-1.2.1.a */,
+				FB6E179620BBBFE200AC77C2 /* JANALYTICSEventObject.h */,
+			);
+			path = janalytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,7 +599,15 @@
 				TargetAttributes = {
 					7B6668AD1FD7ECBB009FD8AD = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -626,6 +730,7 @@
 				7B0057EA1FD8D56900DAFF1E /* BaseTableView.m in Sources */,
 				7B1ADB781FD91F9F0061FC69 /* RecommendDateDetailCtr.m in Sources */,
 				FB43BE9C20A59B5700E3956F /* WallpaperHeaderView.m in Sources */,
+				FB676D6E20ABCFAD00A1554C /* DDCircleProgressView.m in Sources */,
 				FBA2372920A998C6001C9C07 /* MainScreenWallpaperView.m in Sources */,
 				7B0058121FD8E30E00DAFF1E /* RecommendController.m in Sources */,
 				7B0058061FD8D58600DAFF1E /* UIButton+Util.m in Sources */,
@@ -633,7 +738,6 @@
 				7B0057E81FD8D56900DAFF1E /* ScrollViewHeader.m in Sources */,
 				7B00580E1FD8DCD400DAFF1E /* HomeController.m in Sources */,
 				7B4578201FDA440E0076FDCF /* RecommendArticleDetailHeader.m in Sources */,
-				7B0057DC1FD8D4D000DAFF1E /* NetRequest.m in Sources */,
 				FBA236EC20A93A09001C9C07 /* WallpaperDetailController.m in Sources */,
 				7B00580B1FD8D58600DAFF1E /* UIView+Util.m in Sources */,
 				FB43BEA020A5A27300E3956F /* WallpaperListController.m in Sources */,
@@ -794,17 +898,24 @@
 			baseConfigurationReference = 9F1F43216DAB7A52ECE269C0 /* Pods-TimeBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeBook/TimeBook.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8L4W5XFHVG;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Other/APPHeader.pch";
 				INFOPLIST_FILE = TimeBook/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TimeBook/Other/Vendor/Jpush",
+					"$(PROJECT_DIR)/TimeBook/Other/Vendor/janalytics",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sky.today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "2afd9a35-7c93-45b9-aa19-c973863f8410";
+				PROVISIONING_PROFILE_SPECIFIER = today_dev;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -814,17 +925,24 @@
 			baseConfigurationReference = ED4683E5D6D961CECBB925F0 /* Pods-TimeBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = TimeBook/TimeBook.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8L4W5XFHVG;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Other/APPHeader.pch";
 				INFOPLIST_FILE = TimeBook/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TimeBook/Other/Vendor/Jpush",
+					"$(PROJECT_DIR)/TimeBook/Other/Vendor/janalytics",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sky.today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f042f964-194d-43cc-99c8-da6397236a88";
+				PROVISIONING_PROFILE_SPECIFIER = today_dis;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

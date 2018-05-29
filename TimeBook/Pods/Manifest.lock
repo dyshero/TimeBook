@@ -18,6 +18,9 @@ PODS:
   - FDFullscreenPopGesture (1.1)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.1)
+  - SDWebImage (4.3.2):
+    - SDWebImage/Core (= 4.3.2)
+  - SDWebImage/Core (4.3.2)
   - SVProgressHUD (2.2.5)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -29,6 +32,7 @@ DEPENDENCIES:
   - FDFullscreenPopGesture
   - Masonry
   - MJRefresh
+  - SDWebImage
   - SVProgressHUD
   - YYKit
 
@@ -38,9 +42,10 @@ SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 40911be8b2a782d4c8856b71fd1ed72f0f5e7c46
+PODFILE CHECKSUM: 2b87ff03a5ff719b00f510dbaad7c973a4ab74bf
 
 COCOAPODS: 1.3.1

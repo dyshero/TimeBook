@@ -10,7 +10,6 @@
 @implementation AFNet
 
 + (id)shareManager {
-    
     static AFHTTPSessionManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -25,35 +24,6 @@
         manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/html",@"text/plain",@"text/javascript",nil];
     });
     return manager;
-}
-
-+ (void)getRequestHttpURL:(NSString *)url
-                completation:(SuccessBlock)success
-                     failure:(FailureBlock)netFailure {
-    [self checkNetworkReachabilityStatus];
-    AFHTTPSessionManager *manager = [AFNet shareManager];
-    [self setNetworkActivityIndicator:YES];
-    [manager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        id responseData = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        if (responseData == nil) {
-            return;
-        }
-        
-        if (success && responseData) {
-            success(responseData);
-        }
-        
-        [self setNetworkActivityIndicator:NO];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        [self setNetworkActivityIndicator:NO];
-        
-        if (netFailure) {
-            netFailure(error);
-        }
-        
-    }];
 }
 
 + (void)requestWithUrl:(NSString *)url requestType:(HttpRequestType)requestType parameter:(NSDictionary *)parameter completation:(SuccessBlock)success failure:(FailureBlock)failure {
@@ -73,7 +43,6 @@
             if (failure) {
                 failure(error);
             }
-            
         }];
     } else {
         [manager POST:url parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -94,87 +63,6 @@
     }
 }
 
-+ (void)postRequestHttpURL:(NSString *)url
-                    parameter:(id)parameter
-                 completation:(SuccessBlock)success
-                      failure:(FailureBlock)netFailure {
-    
-    [self checkNetworkReachabilityStatus];
-    
-    AFHTTPSessionManager *manager = [AFNet shareManager];
-    
-    [self setNetworkActivityIndicator:YES];
-    
-    [manager POST:url parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        id responseData = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        
-        if (responseData == nil) {
-            return;
-        }
-        
-        if (success && responseData) {
-            success(responseData);
-        }
-        
-        [self setNetworkActivityIndicator:NO];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        [self setNetworkActivityIndicator:NO];
-        if (netFailure) {
-            netFailure(error);
-        }
-        
-    }];
-    
-}
-
-+ (void)postUploadURL:(NSString *)url
-              parameters:(NSDictionary *)parameters
-                formData:(FormDataBlock)uploadData
-                progress:(ProgressBlock)progress
-            completation:(SuccessBlock)success
-                 failure:(FailureBlock)failure {
-    
-    [self checkNetworkReachabilityStatus];
-    
-    AFHTTPSessionManager *manager = [AFNet shareManager];
-    
-    [self setNetworkActivityIndicator:YES];
-    
-    [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        
-        if (uploadData) {
-            uploadData(formData);
-        }
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-        if (progress) {
-            progress(uploadProgress);
-        }
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        id responseData = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        
-        if (success && responseData) {
-            success(responseData);
-        }
-
-        [self setNetworkActivityIndicator:NO];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        [self setNetworkActivityIndicator:NO];
-        
-        if (failure) {
-            failure(error);
-        }
-        
-    }];
-    
-}
 
 //检查网络
 + (void)checkNetworkReachabilityStatus{

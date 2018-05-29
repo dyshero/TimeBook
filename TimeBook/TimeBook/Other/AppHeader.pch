@@ -27,7 +27,6 @@
 #import "APPUtils.h"
 #import "APPConfig.h"
 #import "AppFramework.h"
-#import "NetRequest.h"
 
 /**
  *  --------Custom file---------

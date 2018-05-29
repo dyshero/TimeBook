@@ -8,10 +8,9 @@
 
 #import "SampleReelsController.h"
 #import "RecommendArticleDetailCtr.h"
-
 #import "BaseTableView.h"
 #import "SampleReelsCell.h"
-
+#import "AFNet.h"
 #import "RecommendModel.h"
 
 @interface SampleReelsController () <UITableViewDelegate,UITableViewDataSource,SampleReelsCellProtocol>
@@ -69,23 +68,21 @@
         }
     }
     
-    [NetRequest loadSampleReelsSuccessBlock:^(id object) {
-        
+    [AFNet requestWithUrl:@"http://chanyouji.com/api/pictorials/articles.json" requestType:HttpRequestTypeGet parameter:nil completation:^(id object) {
         NSArray *arr = object;
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:arr];
         [APPUtils saveObject:data forKey:CACHE_SAMPLEREEL];
         
         [self loadDataWithArr:arr];
-        
-    } failBlock:^(NSString *error) {
-        
+    } failure:^(NSError *error) {
         self.progressLine.hidden = YES;
-
+        
         if (self.datas.count == 0) {
             self.failPic.hidden = NO;
         }else {
             self.failPic.hidden = YES;
         }
+
     }];
 }
 

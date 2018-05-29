@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WallpaperDetailSetSheetView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-kk-oYl">
+                    <rect key="frame" x="10" y="10" width="355" height="29"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="0.80490154113698631" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="主屏幕预览"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="NVl-Rs-6SB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-go-d08">
+                    <rect key="frame" x="10" y="49" width="355" height="29"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="0.79995184080000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="锁定屏幕预览"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="lpa-V8-grJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39v-Jw-ip5">
+                    <rect key="frame" x="10" y="120" width="355" height="29"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="0.79995184080000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="ksD-9T-EnW"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxi-bR-zL7">
+                    <rect key="frame" x="0.0" y="109" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80096853599999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yRL-F7-zF8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80096853595890416" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XMt-go-d08" firstAttribute="top" secondItem="mdq-kk-oYl" secondAttribute="bottom" constant="10" id="0jL-lW-VyD"/>
+                <constraint firstItem="mdq-kk-oYl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="74N-1j-eaS"/>
+                <constraint firstItem="mdq-kk-oYl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="9am-QX-m2f"/>
+                <constraint firstItem="XMt-go-d08" firstAttribute="leading" secondItem="mdq-kk-oYl" secondAttribute="leading" id="AbA-iV-htH"/>
+                <constraint firstItem="39v-Jw-ip5" firstAttribute="leading" secondItem="mdq-kk-oYl" secondAttribute="leading" id="Fxt-TI-Djz"/>
+                <constraint firstAttribute="bottom" secondItem="39v-Jw-ip5" secondAttribute="bottom" constant="20" id="KaD-5O-DHQ"/>
+                <constraint firstAttribute="trailing" secondItem="Uxi-bR-zL7" secondAttribute="trailing" id="Rtn-7n-4nD"/>
+                <constraint firstItem="XMt-go-d08" firstAttribute="trailing" secondItem="mdq-kk-oYl" secondAttribute="trailing" id="a8w-Ya-OBC"/>
+                <constraint firstItem="39v-Jw-ip5" firstAttribute="trailing" secondItem="mdq-kk-oYl" secondAttribute="trailing" id="aCM-5g-3sP"/>
+                <constraint firstItem="Uxi-bR-zL7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bEi-Cy-yuI"/>
+                <constraint firstAttribute="trailing" secondItem="mdq-kk-oYl" secondAttribute="trailing" constant="10" id="fEh-DS-j2I"/>
+                <constraint firstItem="39v-Jw-ip5" firstAttribute="top" secondItem="Uxi-bR-zL7" secondAttribute="bottom" constant="10" id="ow3-ZU-WJ7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="39v-Jw-ip5" id="z0p-P4-VQO"/>
+                <outlet property="lockScreenBtn" destination="XMt-go-d08" id="rsI-2J-Qgh"/>
+                <outlet property="mainScreenBtn" destination="mdq-kk-oYl" id="KO2-Pk-lm9"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-251.5"/>
+        </view>
+    </objects>
+</document>

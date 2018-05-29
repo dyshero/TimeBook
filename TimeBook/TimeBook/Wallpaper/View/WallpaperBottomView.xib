@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WallpaperBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tg-aB-3iN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vW-XF-f22">
+                            <rect key="frame" x="99" y="0.0" width="79" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="保存" image="ButtonDownload"/>
+                            <connections>
+                                <action selector="bottomClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="nml-tO-n63"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnh-iN-Ui4">
+                            <rect key="frame" x="178" y="0.0" width="98.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="分享" image="ButtonShare"/>
+                            <connections>
+                                <action selector="bottomClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="m4r-yk-Keo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkB-tM-qHv">
+                            <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="返回" image="ButtonBack"/>
+                            <connections>
+                                <action selector="bottomClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="ASy-uv-Xgn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zw-Vu-ToP">
+                            <rect key="frame" x="276.5" y="0.0" width="98.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="预览" image="ButtonPreview"/>
+                            <connections>
+                                <action selector="bottomClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Fx-Dk-yJq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0vW-XF-f22" firstAttribute="top" secondItem="WkB-tM-qHv" secondAttribute="top" id="4Nv-Z0-OBl"/>
+                        <constraint firstItem="2Zw-Vu-ToP" firstAttribute="width" secondItem="WkB-tM-qHv" secondAttribute="width" id="9Dd-kI-s5W"/>
+                        <constraint firstAttribute="bottom" secondItem="0vW-XF-f22" secondAttribute="bottom" id="Ayl-eZ-fes"/>
+                        <constraint firstItem="0vW-XF-f22" firstAttribute="top" secondItem="5tg-aB-3iN" secondAttribute="top" id="BFm-N6-Lbh"/>
+                        <constraint firstAttribute="height" constant="50" id="DwR-br-w6G"/>
+                        <constraint firstItem="0vW-XF-f22" firstAttribute="height" secondItem="WkB-tM-qHv" secondAttribute="height" id="JUD-fE-kIo"/>
+                        <constraint firstItem="Lnh-iN-Ui4" firstAttribute="height" secondItem="WkB-tM-qHv" secondAttribute="height" id="NZa-Q2-8mr"/>
+                        <constraint firstItem="0vW-XF-f22" firstAttribute="bottom" secondItem="WkB-tM-qHv" secondAttribute="bottom" id="Qj7-AH-nIX"/>
+                        <constraint firstItem="Lnh-iN-Ui4" firstAttribute="leading" secondItem="0vW-XF-f22" secondAttribute="trailing" id="R7u-VF-Zs5"/>
+                        <constraint firstItem="Lnh-iN-Ui4" firstAttribute="top" secondItem="WkB-tM-qHv" secondAttribute="top" id="aKx-2R-ibc"/>
+                        <constraint firstItem="WkB-tM-qHv" firstAttribute="leading" secondItem="5tg-aB-3iN" secondAttribute="leading" id="be6-ml-FP3"/>
+                        <constraint firstItem="Lnh-iN-Ui4" firstAttribute="bottom" secondItem="WkB-tM-qHv" secondAttribute="bottom" id="czf-My-W7i"/>
+                        <constraint firstItem="0vW-XF-f22" firstAttribute="leading" secondItem="WkB-tM-qHv" secondAttribute="trailing" id="d87-p4-wWC"/>
+                        <constraint firstItem="Lnh-iN-Ui4" firstAttribute="leading" secondItem="0vW-XF-f22" secondAttribute="trailing" id="lNz-zJ-7K7"/>
+                        <constraint firstItem="0vW-XF-f22" firstAttribute="width" secondItem="WkB-tM-qHv" secondAttribute="width" multiplier="0.8" id="mDJ-XX-BpO"/>
+                        <constraint firstItem="2Zw-Vu-ToP" firstAttribute="leading" secondItem="Lnh-iN-Ui4" secondAttribute="trailing" id="mXW-va-Yde"/>
+                        <constraint firstAttribute="trailing" secondItem="2Zw-Vu-ToP" secondAttribute="trailing" id="sXU-vI-NZg"/>
+                        <constraint firstItem="2Zw-Vu-ToP" firstAttribute="height" secondItem="WkB-tM-qHv" secondAttribute="height" id="vF5-hD-qcU"/>
+                        <constraint firstItem="2Zw-Vu-ToP" firstAttribute="bottom" secondItem="WkB-tM-qHv" secondAttribute="bottom" id="x8v-3G-Bqo"/>
+                        <constraint firstItem="2Zw-Vu-ToP" firstAttribute="top" secondItem="WkB-tM-qHv" secondAttribute="top" id="yyd-fw-2sR"/>
+                        <constraint firstItem="Lnh-iN-Ui4" firstAttribute="width" secondItem="WkB-tM-qHv" secondAttribute="width" id="zFz-c0-8o0"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="August 30,2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ww5-el-qw4">
+                    <rect key="frame" x="15" y="100" width="120" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1he-lZ-vMK">
+                    <rect key="frame" x="15" y="131" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lKE-X3-BNu">
+                    <rect key="frame" x="15" y="158" width="345" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="yj1-zf-Qye"/>
+                    </constraints>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79933647260273977" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1he-lZ-vMK" secondAttribute="trailing" constant="15" id="4RV-ZX-BPL"/>
+                <constraint firstItem="Ww5-el-qw4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="7o4-eS-jhb"/>
+                <constraint firstItem="1he-lZ-vMK" firstAttribute="top" secondItem="Ww5-el-qw4" secondAttribute="bottom" constant="10" id="8Iy-eO-ZF7"/>
+                <constraint firstItem="5tg-aB-3iN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DfB-Cu-8yu"/>
+                <constraint firstItem="lKE-X3-BNu" firstAttribute="top" secondItem="1he-lZ-vMK" secondAttribute="bottom" constant="10" id="JdJ-96-gil"/>
+                <constraint firstItem="Ww5-el-qw4" firstAttribute="top" secondItem="5tg-aB-3iN" secondAttribute="bottom" constant="50" id="YzM-59-1m7"/>
+                <constraint firstAttribute="trailing" secondItem="5tg-aB-3iN" secondAttribute="trailing" id="n14-Rv-hAg"/>
+                <constraint firstItem="1he-lZ-vMK" firstAttribute="leading" secondItem="Ww5-el-qw4" secondAttribute="leading" id="qXf-4i-YJc"/>
+                <constraint firstItem="5tg-aB-3iN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rYf-mS-O7Q"/>
+                <constraint firstItem="lKE-X3-BNu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="v4W-sh-ok0"/>
+                <constraint firstAttribute="trailing" secondItem="lKE-X3-BNu" secondAttribute="trailing" constant="15" id="xG6-uh-McA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="1he-lZ-vMK" id="ro8-Q9-xoq"/>
+                <outlet property="lookBtn" destination="2Zw-Vu-ToP" id="YQT-yE-WhY"/>
+                <outlet property="mapView" destination="lKE-X3-BNu" id="E5y-c4-PuY"/>
+                <outlet property="pubdateLabel" destination="Ww5-el-qw4" id="grf-eR-XH6"/>
+                <outlet property="saveBtn" destination="0vW-XF-f22" id="pJe-1z-CRh"/>
+                <outlet property="shareBtn" destination="Lnh-iN-Ui4" id="rv5-de-O0m"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-116"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ButtonBack" width="25" height="25"/>
+        <image name="ButtonDownload" width="25" height="25"/>
+        <image name="ButtonPreview" width="25" height="25"/>
+        <image name="ButtonShare" width="25" height="25"/>
+    </resources>
+</document>
